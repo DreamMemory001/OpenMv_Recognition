@@ -1,5 +1,4 @@
 # OpenMv_recognition
-Distinguish color and shape to  use of OpenMV
 # OpenmMV进行简单的颜色和图形识别 
  * [使用openmv要保证识别的效果的话，需要对环境进行严格的控制，
  晚上光源的冷暖色等，对识别都有很大的影响]
