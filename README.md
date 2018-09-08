@@ -124,9 +124,11 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 >  首先调用  template1 = image.Image("/1.pgm") 进行图片的读取
 
 > 然后调用 find_template(template1, 0.7, step=4, search=SEARCH_EX) 寻找目标图形
+
+学习更多可关注这位大牛的github [id]:https://github.com/iabdalkader"wp55"
 ### 实现的一些具体的效果图如下：
 
-
+5555
  ![第一张图：](/results/result_pic_1.png)
  ![第二张图：](/results/result_pic_2.png)
  ![第三张图：](/results/result_pic_3.png)
