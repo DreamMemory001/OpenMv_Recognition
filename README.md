@@ -126,3 +126,11 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 > 然后调用 find_template(template1, 0.7, step=4, search=SEARCH_EX) 寻找目标图形
 
  ![第一张图：](/results/result_pic_1.png)
+ ![第二张图：](/results/result_pic_2.png)
+ ![第二张图：](/results/result_pic_3.png)
+ ![第二张图：](/results/result_pic_4.png)
+ ![第二张图：](/results/result_pic_5.png)
+ ![第二张图：](/results/result_pic_6.png)
+ ![第二张图：](/results/result_pic_7.png)
+ ![第二张图：](/results/result_pic_8.png)
+ ![第二张图：](/results/result_pic_9.png) 
