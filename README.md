@@ -125,6 +125,18 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 
 > 然后调用 find_template(template1, 0.7, step=4, search=SEARCH_EX) 寻找目标图形
 
+### 实现的一些具体的效果图如下：
+
+ ![第一张图：](/results/result_pic_1.png)
+ ![第二张图：](/results/result_pic_2.png)
+ ![第三张图：](/results/result_pic_3.png)
+ ![第四张图：](/results/result_pic_4.png)
+ ![第五张图：](/results/result_pic_5.png)
+ ![第六张图：](/results/result_pic_6.png)
+ ![第七张图：](/results/result_pic_7.png)
+ ![第八张图：](/results/result_pic_8.png)
+ ![第九张图：](/results/result_pic_9.png) 
+
 ## <3>通过openmv把数据传输给STM32，然后通过电容屏显示出来 
 
 1.发送数据
@@ -197,20 +209,9 @@ void Delay(__IO uint32_t nCount)	 //简单的延时函数
 ```
 
 最终在电容屏上的显示效果如下：
+
  ![第十张图：](/results/result_pic_10.png) 
 
-### 实现的一些具体的效果图如下：
-
- ![第一张图：](/results/result_pic_1.png)
- ![第二张图：](/results/result_pic_2.png)
- ![第三张图：](/results/result_pic_3.png)
- ![第四张图：](/results/result_pic_4.png)
- ![第五张图：](/results/result_pic_5.png)
- ![第六张图：](/results/result_pic_6.png)
- ![第七张图：](/results/result_pic_7.png)
- ![第八张图：](/results/result_pic_8.png)
- ![第九张图：](/results/result_pic_9.png) 
- 
 ### 学习更多可关注这位大牛的github :[Ibrahim Abd Elkader](https://github.com/iabdalkader)
 ### 学习还可以到星瞳科技的官网：[星瞳科技](http://book.openmv.cc/quick-starter.html)
 ### 还可以跟着凡哥学，好多官网的方法函数回不全，但是总结的挺好：[凡哥带你玩转openmv](http://book.myopenmv.com/)
