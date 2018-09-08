@@ -127,9 +127,77 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 
 ## <3>通过openmv把数据传输给STM32，然后通过电容屏显示出来 
 
+1.发送数据
+
+在openmv端通过串口三进行发送：
+
+```
+uart = UART(3,115200) #初始化利用串口3
+
+ uart.write(string)  #通过此方法进行发送 
+```
+
+2.在stm32端接收数据
+
+在USER文件夹下有一个叫做bsp_debug_usar的c文件下设定stm32使用串口一
+
+通过getchar()在缓存区中进行获得传输的数据（目前只能是一个字符一个字符的传，因为缓存区中的缓存内容很多，如果按字符串处理，必须设定帧头和帧尾进行选择有用数据进行显示）
+```
+ case 'x':
+   a1=getchar();
+			b1=getchar();
+			c1=getchar();
+			a1=a1-48;  //字符0的ascll码为48，将字符转化为数字
+			b1=b1-48;
+			c1=c1-48;
+```
+
+3.通过电容屏显示所传输的内容
+
+先对电容屏进行初始化 ：
+
+```
+	/* LED 端口初始化 */
+	LED_GPIO_Config();	 
+  
+  /*初始化液晶屏*/
+  LCD_Init();
+  LCD_LayerInit();
+  LTDC_Cmd(ENABLE);
+	
+	/*把背景层刷黑色*/
+  LCD_SetLayer(LCD_BACKGROUND_LAYER);  
+	LCD_Clear(LCD_COLOR_BLACK);
+	
+  /*初始化后默认使用前景层*/
+	LCD_SetLayer(LCD_FOREGROUND_LAYER); 
+	/*默认设置不透明	，该函数参数为不透明度，范围 0-0xff ，0为全透明，0xff为不透明*/
+  LCD_SetTransparency(0xFF);
+	LCD_Clear(LCD_COLOR_BLACK);
+	/*经过LCD_SetLayer(LCD_FOREGROUND_LAYER)函数后，
+	以下液晶操作都在前景层刷新，除非重新调用过LCD_SetLayer函数设置背景层*/		
+	
+  LED_BLUE;    
+```
+利用到的显示的函数是：
+```
+ LCD_ClearLine(LINE(9));
+	LCD_DisplayStringLine(LINE(9),(uint8_t* )shape3);
+```
+* [注]  openmv端发送时会有延迟[ time.sleep(10)] 为了防止接收数据紊乱
 
 
+* 所以在stm32接收端也需要进行延迟，自己可以重写一个延时函数达到延迟的效果
 
+```
+void Delay(__IO uint32_t nCount)	 //简单的延时函数
+{
+	for(; nCount != 0; nCount--);
+}
+```
+
+最终在电容屏上的显示效果如下：
+![电容屏显示]:(/result/result_pic_10.png)
 
 ### 实现的一些具体的效果图如下：
 
