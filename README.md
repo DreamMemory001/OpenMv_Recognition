@@ -197,7 +197,7 @@ void Delay(__IO uint32_t nCount)	 //简单的延时函数
 ```
 
 最终在电容屏上的显示效果如下：
-![电容屏显示]:(/result/result_pic_10.png)
+![电容屏显示:](/result/result_pic_10.png)
 
 ### 实现的一些具体的效果图如下：
 
