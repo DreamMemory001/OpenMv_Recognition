@@ -125,6 +125,9 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 
 > 然后调用 find_template(template1, 0.7, step=4, search=SEARCH_EX) 寻找目标图形
 
+## <3>通过openmv把数据传输给STM32，然后通过电容屏显示出来 
+
+
 
 
 
