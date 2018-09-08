@@ -214,4 +214,4 @@ void Delay(__IO uint32_t nCount)	 //简单的延时函数
 
 ### 学习更多可关注这位大牛的github :[Ibrahim Abd Elkader](https://github.com/iabdalkader)
 ### 学习还可以到星瞳科技的官网：[星瞳科技](http://book.openmv.cc/quick-starter.html)
-### 还可以跟着凡哥学，好多官网的方法函数回不全，但是总结的挺好：[凡哥带你玩转openmv](http://book.myopenmv.com/)
+### 还可以跟着凡哥学，好多的方法函数会不怎么全，但是总结的不错：[凡哥带你玩转openmv](http://book.myopenmv.com/)
