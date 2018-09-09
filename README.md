@@ -24,6 +24,7 @@ invert=1 反转颜色阈值，invert=False默认不反转.
 roi 设置颜色识别的视野区域，roi是一个元组， roi = (x, y, w, h)，代表从左上顶点(x,y)开始的宽为w高为h的矩形区域，roi不设置的话默认为整个图像视野。
  
  3.Blob对象
+ 
 
  {x:26, y:54, w:83, h:38, pixels:448, cx:65, cy:75, rotation:0.342305, code:1, count:1}
 
