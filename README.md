@@ -16,6 +16,7 @@
  颜色2 | 1 | 2^1=2
  颜色3 | 2 | 2^2=4
  颜色4 | 3 | 2^3=8
+ 
 
  2.颜色的识别用到的是 find_blobs（thresholds, invert=False, roi=Auto）函数
 
