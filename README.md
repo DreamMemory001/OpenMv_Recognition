@@ -156,6 +156,7 @@ uart = UART(3,115200) #初始化利用串口3
 ```
  case 'x':
    a1=getchar();
+   
 			b1=getchar();
 			c1=getchar();
 			a1=a1-48;  //字符0的ascll码为48，将字符转化为数字
