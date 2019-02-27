@@ -49,6 +49,7 @@ code 颜色编号 取值范围 2^n : 1，2， 4， 8
 count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>=1
 
 
+
 ## <2> 对形状的识别
 
  * opnemv在识别形状中有现成的对圆形，矩形的识别已经分装成API函数直接调用就好。
