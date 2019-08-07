@@ -65,6 +65,8 @@ count 如果merge=False count恒等于1, 如果开启色块合并merge=True 则>
 
  * 大概原理如下：
  
+ 
+ 
 
 > * 图像求导 , 进而求得边缘图像 
 
